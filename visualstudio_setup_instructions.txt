@@ -1,0 +1,16 @@
+1. Download SFML 2.4.2 versions - "Visual C++ 14(2015) - 32-bit" at https://www.sfml-dev.org/download/sfml/2.4.2/
+2. Extract the zip file and keep note of where it's located
+2. Create new  project in visual studio or open the one provided
+3. Click the "Project" tab at the top and then "Properties"
+4. Change the configuration on the top left to "All Configurations"
+5. On the left side click the drop down on "C/C++" -> "General"
+6. For "Additional Include Directories" navigate to your sfml folder 
+	and within it there is an include folder, select that.
+7. On the left side now click the drop down on "Linker" -> "General"
+8. For "Additional Library Directories" navigate to your sfml folder and select the lib folder with it
+9. On the left now hit the drop down for Linker again and select "Input"
+10. click on additional dependencies and add "sfml-windows.lib", "sfml-system.lib", "sfml-graphics.lib" excluding the quotes/commas.
+11. Lastly go into your sfml folder and navigate to the bin folder, copy all the .dll files into and
+paste them into the "Debug" and "Release" folder located in your project directory.
+*If you don't have these folders try running the sfml example and one of them should be generated depening
+on what mode youre in.
